@@ -1,0 +1,67 @@
+{
+  "name": "azure-functions-ts-essentials",
+  "version": "1.0.0",
+  "description": "Essential interfaces and tools for backend development on Azure Functions with TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulls1z3/azure-functions-ts-essentials.git"
+  },
+  "author": {
+    "name": "Burak Tasci",
+    "email": "me@fulls1z3.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fulls1z3/azure-functions-ts-essentials/issues"
+  },
+  "homepage": "https://github.com/fulls1z3/azure-functions-ts-essentials#readme",
+  "scripts": {
+    "clean": "rimraf .cache dist",
+    "build": "ts-node ./tools/build/rollup.ts && rimraf .temp",
+    "ci:before": "greenkeeper-lockfile-update",
+    "ci:after": "greenkeeper-lockfile-upload",
+    "lint": "tslint -p ./tslint.json --force",
+    "test": "jest --coverage --colors",
+    "test:ci": "jest --ci --coverage --colors",
+    "release": "standard-version"
+  },
+  "main": "./bundles/azure-functions-ts-essentials.umd.js",
+  "module": "./azure-functions-ts-essentials.es5.js",
+  "es2015": "./azure-functions-ts-essentials.js",
+  "typings": "./index.d.ts",
+  "devDependencies": {
+    "@types/jest": "~21.1.0",
+    "@types/node": "~8.0.30",
+    "rimraf": "~2.6.1",
+    "ts-node": "~3.3.0",
+    "glob": "~7.1.2",
+    "camelcase": "~4.1.0",
+    "rollup": "~0.42.0",
+    "rollup-plugin-node-resolve": "~3.0.0",
+    "rollup-plugin-commonjs": "~8.2.0",
+    "rollup-plugin-sourcemaps": "~0.4.2",
+    "rollup-plugin-uglify": "~2.0.1",
+    "jest": "~21.1.0",
+    "jest-junit-reporter": "~1.1.0",
+    "ts-jest": "~21.0.1",
+    "standard-version": "~4.2.0",
+    "tslint": "~5.7.0",
+    "backend-tslint-rules": "1.0.0",
+    "typescript": "~2.5.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.spec.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testResultsProcessor": "./node_modules/jest-junit-reporter",
+    "cache": false,
+    "silent": true
+  }
+}

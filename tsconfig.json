@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true,
+    "lib": ["es2015"]
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "usePrecompiledFiles": true,
+    "useWebpackText": true
+  }
+}

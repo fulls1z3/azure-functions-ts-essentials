@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.es2015.json",
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "../azure-functions-ts-essentials-es5/"
+  },
+  "files": ["./index.ts"]
+}
