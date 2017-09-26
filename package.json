@@ -63,5 +63,10 @@
     "testResultsProcessor": "./node_modules/jest-junit-reporter",
     "cache": false,
     "silent": true
+  },
+  "greenkeeper": {
+    "ignore": [
+      "rollup"
+    ]
   }
 }
