@@ -27,25 +27,6 @@ const testData: { name: string } = {
 
 describe('azure-functions-ts-essentials', () => {
   describe('mock', () => {
-    // it('Http trigger with body success', () => {
-    //   const mockContext: Context = {
-    //     done: (err, response) => {
-    //       expect(err).toBeUndefined();
-    //
-    //       expect(response.status).toBe(HttpStatusCode.OK);
-    //       expect(response.body).toBe('');
-    //     },
-    //     log: () => {/**/}
-    //   };
-    //
-    //   const mockRequest: HttpRequest = {
-    //     method: HttpMethod.Get,
-    //     body: {},
-    //     query: {}
-    //   };
-    //
-    //   mock(mockContext, mockRequest);
-    // });
     it('should be able to return success code w/request body', () => {
       const mockContext: Context = {
         done: (err, response) => {
