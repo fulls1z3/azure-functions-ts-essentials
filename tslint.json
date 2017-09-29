@@ -1,5 +1,8 @@
 ﻿{
   "extends": [
     "backend-tslint-rules"
-  ]
+  ],
+  "rules": {
+    "no-bitwise": false
+  }
 }

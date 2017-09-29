@@ -21,7 +21,7 @@ function promiseify(fn: any): any {
 const readFileAsync = promiseify(readFile);
 const writeFileAsync = promiseify(writeFile);
 
-export const inlineResources = (projectPath: string) => {
+export const copyResources = (projectPath: string) => {
   const files = glob.sync('**/*.ts', {cwd: projectPath});
 
   return Promise.all(files

@@ -1,8 +1,8 @@
+import { HttpMethod } from './http-method';
+
 export interface HttpRequest {
-  body: {
-    name?: string
-  };
-  query: {
-    name?: string
-  };
+  method: HttpMethod;
+  params: any;
+  query: any;
+  body: any;
 }

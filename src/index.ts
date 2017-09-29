@@ -1,14 +1,5 @@
-import { HttpRequest } from './models/http-request';
-import { HttpResponse } from './models/http-response';
-import { Context } from './models/context';
-
-export { Context, HttpRequest, HttpResponse };
-
-export function mock(context: Context, req: HttpRequest): any {
-  const res: HttpResponse = {
-    status: 200,
-    body: req.body.name || ''
-  };
-
-  context.done(undefined, res);
-}
+export { Context } from './models/context';
+export { HttpMethod } from './models/http-method';
+export { HttpRequest } from './models/http-request';
+export { HttpResponse } from './models/http-response';
+export { HttpStatusCode } from './models/http-status-code';
