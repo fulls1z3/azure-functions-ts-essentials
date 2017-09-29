@@ -10,7 +10,7 @@ import * as nodeResolve from 'rollup-plugin-node-resolve';
 import * as uglify from 'rollup-plugin-uglify';
 
 import { NODE_MODULES, root } from './helpers';
-import { inlineResources } from './inline-resources';
+import { copyResources } from './copy-resources';
 
 const packageName = 'azure-functions-ts-essentials';
 const compilationFolder = root('.temp');
@@ -112,9 +112,9 @@ const build = () => {
 
   return Promise.resolve()
     .then(() => relativeCopy('**/*', paths.src, paths.temp)
-      .then(() => inlineResources(paths.temp))
+      .then(() => copyResources(paths.temp))
       // tslint:disable-next-line
-      .then(() => console.log(`>>> ${packageName}: Inlining succeeded`))
+      .then(() => console.log(`>>> ${packageName}: Copy succeeded`))
     )
     .then(() => tsc(`${paths.temp}/tsconfig.es2015.json`)
       .then(exitCode => new Promise((res, reject) => {
