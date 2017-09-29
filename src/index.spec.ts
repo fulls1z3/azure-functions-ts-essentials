@@ -1,22 +1,112 @@
-import { HttpRequest } from './models/http-request';
 import { Context } from './models/context';
-import { mock } from './index';
+import { HttpMethod } from './models/http-method';
+import { HttpRequest } from './models/http-request';
+import { HttpResponse } from './models/http-response';
+import { HttpStatusCode } from './models/http-status-code';
 
-test('Http trigger with body success', () => {
-  const mockContext: Context = {
-    done: (err, response) => {
-      expect(err).toBeUndefined();
+function mock(context: Context, req: HttpRequest): any {
+  let res: HttpResponse;
 
-      expect(response.status).toBe(200);
-      expect(response.body).toBe('');
-    },
-    log: () => {/**/}
-  };
+  if ((req.query && req.query.name) || (req.body && req.body.name))
+    res = {
+      status: HttpStatusCode.OK,
+      body: `Hello ${req.query.name || req.body.name}`
+    };
+  else
+    res = {
+      status: HttpStatusCode.BadRequest,
+      body: 'Please pass a name on the query string or in the request body'
+    };
 
-  const mockRequest: HttpRequest = {
-    body: {},
-    query: {}
-  };
+  context.done(undefined, res);
+}
 
-  mock(mockContext, mockRequest);
+const testData: { name: string } = {
+  name: 'Azure'
+};
+
+describe('azure-functions-ts-essentials', () => {
+  describe('mock', () => {
+    // it('Http trigger with body success', () => {
+    //   const mockContext: Context = {
+    //     done: (err, response) => {
+    //       expect(err).toBeUndefined();
+    //
+    //       expect(response.status).toBe(HttpStatusCode.OK);
+    //       expect(response.body).toBe('');
+    //     },
+    //     log: () => {/**/}
+    //   };
+    //
+    //   const mockRequest: HttpRequest = {
+    //     method: HttpMethod.Get,
+    //     body: {},
+    //     query: {}
+    //   };
+    //
+    //   mock(mockContext, mockRequest);
+    // });
+    it('should be able to return success code w/request body', () => {
+      const mockContext: Context = {
+        done: (err, response) => {
+          expect(err).toBeUndefined();
+
+          expect(response.status).toBe(HttpStatusCode.OK);
+          expect(response.body).toBe(`Hello ${testData.name}`);
+        },
+        log: () => {/**/}
+      };
+
+      const mockRequest: HttpRequest = {
+        method: HttpMethod.Post,
+        params: {},
+        query: {},
+        body: testData
+      };
+
+      mock(mockContext, mockRequest);
+    });
+
+    it('should be able to return success code w/request query', () => {
+      const mockContext: Context = {
+        done: (err, response) => {
+          expect(err).toBeUndefined();
+
+          expect(response.status).toBe(HttpStatusCode.OK);
+          expect(response.body).toBe(`Hello ${testData.name}`);
+        },
+        log: () => {/**/}
+      };
+
+      const mockRequest: HttpRequest = {
+        method: HttpMethod.Get,
+        params: {},
+        query: testData,
+        body: {}
+      };
+
+      mock(mockContext, mockRequest);
+    });
+
+    it('should not return success code w/o any input', () => {
+      const mockContext: Context = {
+        done: (err, response) => {
+          expect(err).toBeUndefined();
+
+          expect(response.status).toBe(HttpStatusCode.BadRequest);
+          expect(response.body).toBe('Please pass a name on the query string or in the request body');
+        },
+        log: () => {/**/}
+      };
+
+      const mockRequest: HttpRequest = {
+        method: HttpMethod.Get,
+        params: {},
+        query: {},
+        body: {}
+      };
+
+      mock(mockContext, mockRequest);
+    });
+  });
 });
