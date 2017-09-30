@@ -15,7 +15,7 @@ function mock(context: Context, req: HttpRequest): any {
   else
     res = {
       status: HttpStatusCode.BadRequest,
-      body: 'Please pass a name on the query string or in the request body'
+      body: 'Please pass a name on the query string or in the request body.'
     };
 
   context.done(undefined, res);
@@ -32,8 +32,8 @@ describe('azure-functions-ts-essentials', () => {
         done: (err, response) => {
           expect(err).toBeUndefined();
 
-          expect(response.status).toBe(HttpStatusCode.OK);
-          expect(response.body).toBe(`Hello ${testData.name}`);
+          expect(response.status).toEqual(HttpStatusCode.OK);
+          expect(response.body).toEqual(`Hello ${testData.name}`);
         },
         log: () => {/**/}
       };
@@ -53,8 +53,8 @@ describe('azure-functions-ts-essentials', () => {
         done: (err, response) => {
           expect(err).toBeUndefined();
 
-          expect(response.status).toBe(HttpStatusCode.OK);
-          expect(response.body).toBe(`Hello ${testData.name}`);
+          expect(response.status).toEqual(HttpStatusCode.OK);
+          expect(response.body).toEqual(`Hello ${testData.name}`);
         },
         log: () => {/**/}
       };
@@ -74,8 +74,8 @@ describe('azure-functions-ts-essentials', () => {
         done: (err, response) => {
           expect(err).toBeUndefined();
 
-          expect(response.status).toBe(HttpStatusCode.BadRequest);
-          expect(response.body).toBe('Please pass a name on the query string or in the request body');
+          expect(response.status).toEqual(HttpStatusCode.BadRequest);
+          expect(response.body).toEqual('Please pass a name on the query string or in the request body.');
         },
         log: () => {/**/}
       };
