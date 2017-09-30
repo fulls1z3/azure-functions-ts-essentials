@@ -1,3 +1,6 @@
+/**
+ * Contains the values of the essential HTTP methods.
+ */
 export enum HttpMethod {
   /**
    * Represents an HTTP GET protocol method.

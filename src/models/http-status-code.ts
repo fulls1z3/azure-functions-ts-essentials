@@ -1,3 +1,6 @@
+/**
+ * Contains the values of status codes defined for HTTP.
+ */
 export enum HttpStatusCode {
   /**
    * Indicates that the client can continue with its request.
