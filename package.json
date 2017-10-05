@@ -4,17 +4,21 @@
   "description": "Essential interfaces and tools for backend development on Azure Functions with TypeScript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fulls1z3/azure-functions-ts-essentials.git"
+    "url": "https://github.com/azure-seed/azure-functions-ts-essentials.git"
   },
+  "keywords": [
+    "azure-functions",
+    "azure"
+  ],
   "author": {
     "name": "Burak Tasci",
     "email": "me@fulls1z3.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fulls1z3/azure-functions-ts-essentials/issues"
+    "url": "https://github.com/azure-seed/azure-functions-ts-essentials/issues"
   },
-  "homepage": "https://github.com/fulls1z3/azure-functions-ts-essentials#readme",
+  "homepage": "https://github.com/azure-seed/azure-functions-ts-essentials#readme",
   "scripts": {
     "clean": "rimraf .cache dist",
     "build": "ts-node ./tools/build/rollup.ts && rimraf .temp",
@@ -30,8 +34,8 @@
   "es2015": "./azure-functions-ts-essentials.js",
   "typings": "./index.d.ts",
   "devDependencies": {
-    "@types/jest": "~21.1.1",
-    "@types/node": "~8.0.31",
+    "@types/jest": "~21.1.2",
+    "@types/node": "~8.0.32",
     "rimraf": "~2.6.2",
     "ts-node": "~3.3.0",
     "glob": "~7.1.2",
@@ -56,6 +60,7 @@
     "testMatch": [
       "**/*.spec.ts"
     ],
+    "mapCoverage": true,
     "moduleFileExtensions": [
       "ts",
       "js"
