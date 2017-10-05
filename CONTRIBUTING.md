@@ -1,4 +1,4 @@
-# Contributing to **`azure-functions-ts-essentials`**
+# Contributing to **`azure-seed/azure-functions-ts-essentials`**
 
 As a contributor, here are the guidelines we would like you to follow:
 
@@ -10,7 +10,7 @@ As a contributor, here are the guidelines we would like you to follow:
  - [Commit message guidelines](#commit)
 
 ## <a name="coc"></a> Code of Conduct
-Help us keep **`azure-functions-ts-essentials`** open and inclusive. Please read and follow our [Code of Conduct][coc].
+Help us keep **`azure-seed/azure-functions-ts-essentials`** open and inclusive. Please read and follow our [Code of Conduct][coc].
 
 ## <a name="issue"></a> Found a Bug?
 If you find a bug in the source code, you can help us by [submitting an issue](#submit-issue) to our [GitHub Repository][github].
@@ -46,12 +46,12 @@ questions like:
 Unfortunately we are not able to investigate / fix bugs without a minimal reproduction, so if we don't hear back from you,
 we are going to close an issue that don't have enough info to be reproduced.
 
-You can file new issues by filling out our [new issue form](https://github.com/fulls1z3/azure-functions-ts-essentials/issues/new).
+You can file new issues by filling out our [new issue form](https://github.com/azure-seed/azure-functions-ts-essentials/issues/new).
 
 ### <a name="submit-pr"></a> Submitting a Pull Request (PR)
 Before you submit your Pull Request (PR) consider the following guidelines:
 
-* Search [GitHub](https://github.com/fulls1z3/azure-functions-ts-essentials/pulls) for an open or closed PR that relates to your submission.
+* Search [GitHub](https://github.com/azure-seed/azure-functions-ts-essentials/pulls) for an open or closed PR that relates to your submission.
 You don't want to duplicate effort.
 * Make your changes in a new git branch:
      ```shell
@@ -70,7 +70,7 @@ You don't want to duplicate effort.
     ```shell
     git push origin my-fix-branch
     ```
-* In GitHub, send a pull request to `backend:master`.
+* In GitHub, send a pull request to `azure-functions-ts-essentials:master`.
 * If we suggest changes then:
   * Make the required updates.
   * Re-run the test suites to ensure tests are still passing.
@@ -109,7 +109,7 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 ## <a name="commit"></a> Commit message guidelines
 We have very precise rules over how our git commit messages can be formatted. This leads to **more readable messages** that
 are easy to follow when looking through the **project history**. But also, we use the git commit messages to **generate
-the **`azure-functions-ts-essentials`** change log**.
+the **`azure-seed/azure-functions-ts-essentials`** change log**.
 
 ### Commit Message Format
 Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special format that includes
@@ -130,7 +130,7 @@ well as in various git tools.
 Footer should contain a [closing reference to an issue](https://help.github.com/articles/closing-issues-via-commit-messages/)
 if any.
 
-Samples: (even more [samples](https://github.com/fulls1z3/azure-functions-ts-essentials/commits/master))
+Samples: (even more [samples](https://github.com/azure-seed/azure-functions-ts-essentials/commits/master))
 ```
 docs(changelog): update change log to alpha.4
 ```
@@ -184,6 +184,6 @@ this commit **Closes**.
 **Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines. The rest of the commit
 message is then used for this.
 
-[coc]: https://github.com/fulls1z3/azure-functions-ts-essentials/blob/master/CODE_OF_CONDUCT.md
-[github]: https://github.com/fulls1z3/azure-functions-ts-essentials
+[coc]: https://github.com/azure-seed/azure-functions-ts-essentials/blob/master/CODE_OF_CONDUCT.md
+[github]: https://github.com/azure-seed/azure-functions-ts-essentials
 [backend-tslint-rules]: https://github.com/fulls1z3/backend-tslint-rules
