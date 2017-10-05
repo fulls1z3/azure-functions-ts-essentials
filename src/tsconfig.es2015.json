@@ -4,8 +4,6 @@
     "target": "es2015",
     "module": "es2015",
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "importHelpers": true,
     "sourceMap": true,
     "declaration": true,
     "removeComments": true,
