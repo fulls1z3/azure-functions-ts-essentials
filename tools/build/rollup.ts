@@ -136,9 +136,8 @@ const build = () => {
     )
     .then(() => Promise.resolve()
       .then(() => relativeCopy('**/*.d.ts', paths.es2015, paths.dist))
-      .then(() => relativeCopy('**/*.metadata.json', paths.es2015, paths.dist))
       // tslint:disable-next-line
-      .then(() => console.log(`>>> ${packageName}: Typings and metadata copy succeeded`))
+      .then(() => console.log(`>>> ${packageName}: Typings copy succeeded`))
     )
     .then(() => {
       const es5Entry = path.join(paths.es5, 'index.js');
