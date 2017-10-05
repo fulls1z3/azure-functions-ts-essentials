@@ -1,11 +1,11 @@
-# azure-functions-ts-essentials [![npm version](https://badge.fury.io/js/azure-functions-ts-essentials.svg)](https://www.npmjs.com/package/azure-functions-ts-essentials) [![npm downloads](https://img.shields.io/npm/dm/azure-functions-ts-essentials.svg)](https://www.npmjs.com/package/azure-functions-ts-essentials)
+# azure-seed/azure-functions-ts-essentials [![npm version](https://badge.fury.io/js/azure-functions-ts-essentials.svg)](https://www.npmjs.com/package/azure-functions-ts-essentials) [![npm downloads](https://img.shields.io/npm/dm/azure-functions-ts-essentials.svg)](https://www.npmjs.com/package/azure-functions-ts-essentials)
 Essential interfaces and tools for backend development on [Azure Functions] with [TypeScript]
 
-[![CircleCI](https://circleci.com/gh/fulls1z3/azure-functions-ts-essentials.svg?style=shield)](https://circleci.com/gh/fulls1z3/azure-functions-ts-essentials)
-[![coverage](https://codecov.io/github/fulls1z3/azure-functions-ts-essentials/coverage.svg?branch=master)](https://codecov.io/gh/fulls1z3/azure-functions-ts-essentials)
+[![CircleCI](https://circleci.com/gh/azure-seed/azure-functions-ts-essentials.svg?style=shield)](https://circleci.com/gh/azure-seed/azure-functions-ts-essentials)
+[![coverage](https://codecov.io/github/azure-seed/azure-functions-ts-essentials/coverage.svg?branch=master)](https://codecov.io/gh/azure-seed/azure-functions-ts-essentials)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![Greenkeeper badge](https://badges.greenkeeper.io/fulls1z3/azure-functions-ts-essentials.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/azure-seed/azure-functions-ts-essentials.svg)](https://greenkeeper.io/)
 
 > Please support this project by simply putting a Github star. Share this library with friends on Twitter and everywhere else you can.
 
