@@ -1,11 +1,14 @@
 import { HttpMethod } from './http-method';
 
 /**
- * Represents a HTTP request.
+ * Represents an HTTP request.
  */
 export interface HttpRequest {
+  originalUrl?: string;
   method: HttpMethod;
-  params: any;
-  query: any;
-  body: any;
+  query?: { [key: string]: any; };
+  headers?: { [key: string]: any; };
+  body?: any;
+  params?: { [key: string]: any; };
+  rawBody?: any;
 }
