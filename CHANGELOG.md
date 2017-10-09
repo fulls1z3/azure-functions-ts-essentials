@@ -2,8 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/azure-seed/azure-functions-ts-essentials/compare/v1.1.1...v1.2.0) (2017-10-09)
+
+
+### Features
+
+* **afte:** add context object members ([#12](https://github.com/azure-seed/azure-functions-ts-essentials/issues/12)) ([5d72f0c](https://github.com/azure-seed/azure-functions-ts-essentials/commit/5d72f0c))
+* **afte:** add HTTP 422 unprocessable entity ([#15](https://github.com/azure-seed/azure-functions-ts-essentials/issues/15)) ([e2b99b8](https://github.com/azure-seed/azure-functions-ts-essentials/commit/e2b99b8))
+* **afte:** add http request object members ([#13](https://github.com/azure-seed/azure-functions-ts-essentials/issues/13)) ([79acf09](https://github.com/azure-seed/azure-functions-ts-essentials/commit/79acf09))
+* **afte:** add http response object members ([#14](https://github.com/azure-seed/azure-functions-ts-essentials/issues/14)) ([6b39149](https://github.com/azure-seed/azure-functions-ts-essentials/commit/6b39149))
+
+
+
 <a name="1.1.1"></a>
-## [1.1.1](https://github.com/fulls1z3/azure-functions-ts-essentials/compare/v1.0.0...v1.1.1) (2017-09-30)
+## [1.1.1](https://github.com/fulls1z3/azure-functions-ts-essentials/compare/v1.1.0...v1.1.1) (2017-09-30)
 
 
 * **afte:** add jsdocs ([#6](https://github.com/fulls1z3/azure-functions-ts-essentials/issues/6)) ([71c4493](https://github.com/fulls1z3/azure-functions-ts-essentials/commit/71c4493))
