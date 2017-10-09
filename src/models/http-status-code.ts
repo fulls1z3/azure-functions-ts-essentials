@@ -204,6 +204,11 @@ export enum HttpStatusCode {
    */
   ExpectationFailed = 417,
   /**
+   * Indicates that the server understands the content type of the request and the request is syntactically correct, but
+   * was unable to process the contained instructions (semantically erroneous).
+   */
+  UnprocessableEntity = 422,
+  /**
    * Indicates that the client should switch to a different protocol such as TLS/1.0.
    */
   UpgradeRequired = 426,
