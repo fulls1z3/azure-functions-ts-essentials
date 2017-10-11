@@ -21,7 +21,7 @@ export interface Context {
     warn(...message: Array<any>): void,
     info(...message: Array<any>): void,
     verbose(...message: Array<any>): void,
-    metric(...message: Array<any>): void,
+    metric(...message: Array<any>): void
   };
 
   /**

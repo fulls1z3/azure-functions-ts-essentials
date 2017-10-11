@@ -10,7 +10,7 @@ function mock(context: Context, req: HttpRequest): any {
   if ((req.query && req.query.name) || (req.body && req.body.name))
     res = {
       status: HttpStatusCode.OK,
-      body: `Hello ${req.query.name || req.body.name}`
+      body: `Hello ${(req.query && req.query.name) || req.body.name}`
     };
   else
     res = {
@@ -32,10 +32,9 @@ describe('azure-functions-ts-essentials', () => {
         done: (err, response) => {
           expect(err).toBeUndefined();
 
-          expect(response.status).toEqual(HttpStatusCode.OK);
-          expect(response.body).toEqual(`Hello ${testData.name}`);
-        },
-        log: () => {/**/}
+          expect((response as HttpResponse).status).toEqual(HttpStatusCode.OK);
+          expect((response as HttpResponse).body).toEqual(`Hello ${testData.name}`);
+        }
       };
 
       const mockRequest: HttpRequest = {
@@ -53,10 +52,9 @@ describe('azure-functions-ts-essentials', () => {
         done: (err, response) => {
           expect(err).toBeUndefined();
 
-          expect(response.status).toEqual(HttpStatusCode.OK);
-          expect(response.body).toEqual(`Hello ${testData.name}`);
-        },
-        log: () => {/**/}
+          expect((response as HttpResponse).status).toEqual(HttpStatusCode.OK);
+          expect((response as HttpResponse).body).toEqual(`Hello ${testData.name}`);
+        }
       };
 
       const mockRequest: HttpRequest = {
@@ -74,10 +72,9 @@ describe('azure-functions-ts-essentials', () => {
         done: (err, response) => {
           expect(err).toBeUndefined();
 
-          expect(response.status).toEqual(HttpStatusCode.BadRequest);
-          expect(response.body).toEqual('Please pass a name on the query string or in the request body.');
-        },
-        log: () => {/**/}
+          expect((response as HttpResponse).status).toEqual(HttpStatusCode.BadRequest);
+          expect((response as HttpResponse).body).toEqual('Please pass a name on the query string or in the request body.');
+        }
       };
 
       const mockRequest: HttpRequest = {
