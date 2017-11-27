@@ -26,23 +26,11 @@ export interface Context {
 
   /**
    * Creates a new bound function.
-   *
-   * @param args
    */
   bind?(...args: Array<any>): void;
 
   /**
-   * Allows writing to the streaming console logs.
-   *
-   * @param message
-   */
-  // log(...message: Array<any>): void;
-
-  /**
    * Informs the runtime that the function execution has finished.
-   *
-   * @param {Error} err
-   * @param {HttpResponse} propertyBag
    */
   done(err?: Error | undefined, propertyBag?: { [key: string]: any }): void;
 }

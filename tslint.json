@@ -3,6 +3,7 @@
     "backend-tslint-rules"
   ],
   "rules": {
+    "no-implicit-dependencies": [true, "dev"],
     "no-bitwise": false
   }
 }
