@@ -1,6 +1,6 @@
 {
   "name": "azure-functions-ts-essentials",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Essential interfaces and tools for backend development on Azure Functions with TypeScript",
   "repository": {
     "type": "git",
