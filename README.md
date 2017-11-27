@@ -12,7 +12,7 @@ Essential interfaces and tools for backend development on [Azure Functions] with
 **NOTE**: This project is in experimental stage now, functionality is subject to slightly change.
 
 ## <a name="prerequisites"></a> Prerequisites
-Please ensure that you are using **`Typescript v2.3.4`** or higher.
+Please ensure that you are using **`Typescript v2.6.2`** or higher.
 
 ## <a name="getting-started"> Getting started
 ### <a name="installation"> Installation
