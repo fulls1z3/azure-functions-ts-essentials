@@ -24,7 +24,7 @@
     "build": "ts-node ./tools/build/rollup.ts && rimraf .temp",
     "ci:before": "greenkeeper-lockfile-update",
     "ci:after": "greenkeeper-lockfile-upload",
-    "lint": "tslint -p ./tslint.json --force",
+    "lint": "tslint -p ./tsconfig.json --force",
     "test": "jest --coverage --colors",
     "test:ci": "jest --ci --coverage --colors",
     "release": "standard-version"
