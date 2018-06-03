@@ -3418,7 +3418,7 @@ source-map-support@^0.5.0:
   dependencies:
     source-map "^0.6.0"
 
-source-map-support@^0.5.3, source-map-support@^0.5.5:
+source-map-support@^0.5.5, source-map-support@^0.5.6:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.6.tgz#4435cee46b1aab62b8e8610ce60f788091c51c13"
   dependencies:
@@ -3745,17 +3745,16 @@ ts-jest@~22.4.6:
     source-map-support "^0.5.5"
     yargs "^11.0.0"
 
-ts-node@~6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-6.0.3.tgz#28bf74bcad134fad17f7469dad04638ece03f0f4"
+ts-node@~6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-6.1.0.tgz#a2c37a11fdb58e60eca887a1269b025cf4d2f8b8"
   dependencies:
     arrify "^1.0.0"
-    chalk "^2.3.0"
     diff "^3.1.0"
     make-error "^1.1.1"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
-    source-map-support "^0.5.3"
+    source-map-support "^0.5.6"
     yn "^2.0.0"
 
 tslib@^1.8.0, tslib@^1.8.1:
