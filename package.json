@@ -39,7 +39,7 @@
     "rimraf": "~2.6.2",
     "ts-node": "~6.0.3",
     "glob": "~7.1.2",
-    "camelcase": "~5.0.0",
+    "camelcase": "~5.1.0",
     "rollup": "~0.42.0",
     "rollup-plugin-node-resolve": "~3.3.0",
     "rollup-plugin-commonjs": "~8.3.0",
