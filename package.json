@@ -34,7 +34,7 @@
   "es2015": "./azure-functions-ts-essentials.js",
   "typings": "./index.d.ts",
   "devDependencies": {
-    "@types/jest": "~22.2.3",
+    "@types/jest": "~24.0.18",
     "@types/node": "~10.0.9",
     "rimraf": "~2.6.2",
     "ts-node": "~6.0.3",
